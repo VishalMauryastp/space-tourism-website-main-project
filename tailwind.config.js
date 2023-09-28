@@ -23,6 +23,7 @@ module.exports = {
       ubun: ["var(--font-ubuntu)"],
       rale: ["var(--font-raleway)"],
       barlow: ["var(--font-barlow)"],
+      bellefair: ["var(--font-bellefair)"],
     },
   },
   plugins: [],
