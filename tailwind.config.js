@@ -8,7 +8,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-
         headerLinks: "#ffffff0a",
         lightBlack: "#0B0D17",
         skyBlue: "#D0D6F9",
