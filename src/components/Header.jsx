@@ -70,6 +70,7 @@ const navLinks =[
             >
               03 Technology
             </Link> */}
+            d
           </div>
         </div>
       </div>
