@@ -1,8 +1,11 @@
+import { useRouter } from "next/navigation";
 import React from "react";
+import "./Homehero.css"
 
 const HomeHero = () => {
+  const router = useRouter()
   return (
-    <div className="text-white w-[80%] mx-auto flex flex-col gap-24 items-center justify-center lg:flex-row h-[calc(100vh-74px)] lg:items-end  lg:pb-24  ">
+    <div className=" text-white w-[80%] mx-auto flex flex-col gap-24 items-center justify-center lg:flex-row h-[calc(100vh-74px)] lg:items-end  lg:pb-24  ">
       <div className="lg:w-[50%] text-center lg:text-left  ">
         <div className="m-auto">
           <h1 className="text-[16px] sm:text-[20px] lg:text-[28px] font-barlow break-words font-normal text-skyBlue tracking-[4.72px]">
@@ -18,8 +21,13 @@ const HomeHero = () => {
         </div>
       </div>
       <div className=" lg:w-[50%] flex ">
-        <div className="lg:ml-auto lg:mr-0 w-[150px] h-[150px] md:w-[242px] md:h-[242px] lg:w-[274px] lg:h-[274px] bg-white rounded-full flex">
-          <h1 className="m-auto text-black text-[32px] tracking-[2px] font-normal font-bellefair">Explore</h1>
+        <div className="ripple cursor-pointer transition-all after:transition-all before:transition-all lg:ml-auto lg:mr-0 w-[150px] h-[150px] md:w-[242px] md:h-[242px] lg:w-[274px] lg:h-[274px] bg-white rounded-full flex"
+           onClick={() => router.push('/destination')}
+           
+        >
+          <h1 className="m-auto text-black text-[32px] tracking-[2px] font-normal font-bellefair "
+        
+          >Explore</h1>
         </div>
       </div>
     </div>
