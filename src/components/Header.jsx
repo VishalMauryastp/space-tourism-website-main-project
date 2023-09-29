@@ -1,12 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { RiMenu5Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 
 const Header = () => {
   const currentPage = usePathname();
+  const router = useRouter();
   // console.log(currentPage)
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -29,14 +30,28 @@ const Header = () => {
     },
   ];
 
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      var header = document.getElementById("myHeader");
+      if (window.scrollY >= 74) {
+        header.classList.add("bg-headerLinks/10"); 
+        header.classList.add("backdrop-blur-[10px]"); 
+      } else {
+        header.classList.remove("bg-headerLinks/10"); 
+        header.classList.remove("backdrop-blur-[10px]");
+      }
+    });
+  }, [ ]);
+
   return (
-    <header className=" header fixed top-0  w-full  ">
-      <div className="py-[14px] sm:py-0 flex justify-between  text-white items-center">
+    <header  className=" header fixed top-0  w-full  ">
+      <div id="myHeader" className="py-[14px] sm:py-0 flex justify-between  text-white items-center">
         <div className="rounded-full w-fit pl-[30px]  lg:pl-[55px]  ">
           <img
             className=""
             src="/starter-code/assets/shared/logo.svg"
             alt="Logo loading..."
+            onClick={() => router.push("/")}
           />
         </div>
         <div className="sm:hidden mr-6 text-3xl">
