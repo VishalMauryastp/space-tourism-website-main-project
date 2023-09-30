@@ -14,3 +14,4 @@ const page = () => {
 };
 
 export default page;
+// h-auto   lg:h-[calc(100vh-164px)]
