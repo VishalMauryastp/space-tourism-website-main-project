@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import "./Carousel.css"
 import data from "../../data/data.json";
 
 // import required modules
@@ -17,7 +17,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Carousel = () => {
   return (
-    <div className="text-white ">
+    <div className="Carousel text-white flex  flex-col  ">
       <div>
         <h1 className="w-[80%]  mt-12  mx-auto text-[16px] sm:text-[20px] lg:text-[28px] font-barlow break-words font-normal text-white tracking-[4.72px]">
           <span className="text-headerLinks/50">01</span> Meet your crew 
@@ -33,18 +33,18 @@ const Carousel = () => {
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
-        pagination={false}
-        // pagination={{
-        //   clickable: true,
-        // }}
+        // pagination={false}
+        pagination={{
+          clickable: true,
+        }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="flex  items-end w-[90%] sm:w-[80%]   mx-auto    "
+        className="carousel w-[90%] sm:w-[80%]   mx-auto    "
       >
         {data?.crew?.map((val, i) => {
           return (
             <SwiperSlide key={i} className="">
-              <div className=" w-full h-auto   lg:h-[calc(100vh-164px)] flex flex-col-reverse sm:flex-col gap-12 lg:gap-0 justify-end lg:flex-row   ">
-                <div className="mt-0 sm:mt-8 lg:w-[55%] text-center lg:text-left  lg:self-center">
+              <div className="  w-full h-auto lg:h-[calc(100vh-164px)] flex flex-col-reverse sm:flex-col justify-end  gap-12 lg:gap-0 lg:justify-end lg:flex-row   ">
+                <div className="relative mt-0 sm:mt-8 lg:w-[55%] text-center lg:text-left  lg:self-center">
                   <h1 className="  text-[16px]  md:text-[24px] lg:text-[32px] font-normal font-bellefair uppercase break-words text-white/60">
                     {val.role}
                   </h1>
