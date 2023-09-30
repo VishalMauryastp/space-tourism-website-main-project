@@ -62,7 +62,7 @@ const Carousel = () => {
 
                 <div className="lg:w-[45%] flex  ">
                   <img
-                    className="mt-8 w-[70%] sm:w-auto lg:h-full sm:mt-auto mb-0  mx-auto"
+                    className="mt-8 w-[50%] sm:w-auto lg:h-full sm:mt-auto mb-0  mx-auto"
 
                     
                     src={val?.images.png}
