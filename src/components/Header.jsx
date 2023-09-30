@@ -44,7 +44,7 @@ const Header = () => {
   }, [ ]);
 
   return (
-    <header  className=" header fixed top-0  w-full  ">
+    <header  className=" header fixed top-0  w-full z-50  ">
       <div id="myHeader" className="py-[14px] sm:py-0 flex justify-between  text-white items-center">
         <div className="rounded-full w-fit pl-[30px]  lg:pl-[55px]  ">
           <img
@@ -93,7 +93,7 @@ const Header = () => {
       {/* mobile nav */}
       <div className="sm:hidden">
         <div
-          className={` absolute w-full  z-10 grid transition-all duration-[400ms]  ${
+          className={` absolute w-full  z-20 grid transition-all duration-[400ms]  ${
             openMenu ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
           } `}
         >
