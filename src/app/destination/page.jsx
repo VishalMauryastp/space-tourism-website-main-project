@@ -1,4 +1,4 @@
-import ComingSoon from "@/components/ComingSoon";
+// import ComingSoon from "@/components/ComingSoon";
 import Destination from "@/components/Destination/Destination";
 import React from "react";
 
