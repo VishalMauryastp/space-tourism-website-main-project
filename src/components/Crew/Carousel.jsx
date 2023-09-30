@@ -20,21 +20,18 @@ const Carousel = () => {
     <div className="text-white ">
       <div>
         <h1 className="w-[80%]  mt-12  mx-auto text-[16px] sm:text-[20px] lg:text-[28px] font-barlow break-words font-normal text-white tracking-[4.72px]">
-          <span className="text-headerLinks/50">01</span> Pick your destination
+          <span className="text-headerLinks/50">01</span> Meet your crew 
         </h1>
       </div>
       <Swiper
-     
         spaceBetween={30}
         centeredSlides={true}
         navigation={false}
         loop={true}
-       
         autoplay={{
-          delay:4000,
-          disableOnInteraction:false,
-          pauseOnMouseEnter:true,
-           
+          delay: 4000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
         pagination={false}
         // pagination={{
@@ -55,7 +52,6 @@ const Carousel = () => {
                     {val.name}
                   </h2>
                   <p className="mx-auto lg:mx-0  text-[15px]   lg:max-w-[444px] md:text-[16px] lg:text-[18px] font-barlow break-words leading-[32px] text-skyBlue font-normal">
-
                     {val.bio}
                   </p>
                 </div>
@@ -63,8 +59,6 @@ const Carousel = () => {
                 <div className="lg:w-[45%] flex  ">
                   <img
                     className="mt-8 w-[50%] sm:w-auto lg:h-full sm:mt-auto mb-0  mx-auto"
-
-                    
                     src={val?.images.png}
                     alt="loading..."
                   />
