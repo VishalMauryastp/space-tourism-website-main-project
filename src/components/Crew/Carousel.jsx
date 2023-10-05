@@ -51,7 +51,7 @@ const Carousel = () => {
                   <h2 className="my-4 text-[24px]   md:text-[40px]  lg:text-[56px] font-normal font-bellefair uppercase break-words text-white">
                     {val.name}
                   </h2>
-                  <p className="mx-auto lg:mx-0  text-[15px]   lg:max-w-[444px] md:text-[16px] lg:text-[18px] font-barlow break-words leading-[32px] text-skyBlue font-normal">
+                  <p className="mx-auto lg:mx-0  text-[15px]   lg:max-w-[444px] md:text-[16px] lg:text-[18px] font-barlow_c break-words leading-[32px] text-skyBlue font-normal">
                     {val.bio}
                   </p>
                 </div>

@@ -1,5 +1,5 @@
 import { ToastContainer } from "react-toastify";
-import { barlow, bellefair, raleway, roboto } from "./font";
+import { Barlow_C, barlow, bellefair, raleway, roboto } from "./font";
 import "./globals.css";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "@/components/Header";
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${raleway.variable} ${bellefair.variable} ${barlow.variable} `}
+        className={`${roboto.variable} ${raleway.variable} ${bellefair.variable} ${barlow.variable} ${Barlow_C.variable} `}
       >
         <Header />
         <main>{children}</main>

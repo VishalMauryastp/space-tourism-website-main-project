@@ -1,4 +1,4 @@
-import { Barlow_Condensed, Bellefair, Raleway, Roboto, Ubuntu } from "next/font/google";
+import { Barlow, Barlow_Condensed, Bellefair, Raleway, Roboto, Ubuntu } from "next/font/google";
 
 export const roboto = Roboto({
   subsets: ["latin"],
@@ -20,11 +20,17 @@ export const raleway =Raleway({
   display: "swap",
   variable: "--font-raleway",
 })
-export const barlow =Barlow_Condensed({
+export const Barlow_C =Barlow_Condensed({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   display: "swap",
   variable: "--font-barlow",
+})
+export const barlow = Barlow({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  display: "swap",
+  variable: "--font-arlow",
 })
 // @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 export const bellefair = Bellefair({

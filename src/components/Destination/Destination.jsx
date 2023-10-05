@@ -7,9 +7,8 @@ const Destination = () => {
   return (
     <div className="min-h-[calc(100vh-74px)] pb-12 lg:pb-0 flex ">
       <div className="m-auto w-full">
-        <h1 className="w-[80%] mt-8 lg:mt-0  mx-auto text-[16px] sm:text-[20px] lg:text-[28px] font-barlow break-words font-normal text-white tracking-[4.72px]">
-          <span className="text-headerLinks/50">01</span> Pick your destination
-        </h1>
+       
+       
         <div className="mt-12  w-[90%] xl:w-[80%] mx-auto flex flex-col lg:flex-row  ">
           <div className="lg:w-[50%]">
             <img
@@ -83,7 +82,7 @@ const Destination = () => {
                         <h1 className=" mt-4 lg:mt-0 text-[56px] md:text-[80px] lg:text-[100px] font-normal break-words font-bellefair text-white">
                           {val?.name}
                         </h1>
-                        <p className=" mx-auto sm:w-[80%] lg:mx-0 lg:w-full  text-[15px] md:text-[16px] lg:text-[18px] tracking-[1px] text-skyBlue font-barlow">
+                        <p className=" mx-auto sm:w-[80%] lg:mx-0 lg:w-full  text-[15px] md:text-[16px] lg:text-[18px] tracking-[1px] text-skyBlue font-barlow_c">
                         {/* lg:max-w-[500px] */}
                           {val?.description}
                         </p>

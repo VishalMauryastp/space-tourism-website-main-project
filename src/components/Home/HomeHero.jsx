@@ -12,7 +12,7 @@ const HomeHero = () => {
             SO, YOU WANT TO TRAVEL TO
           </h1>
           <h2 className="text-[80px] sm:text-[150px] font-bellefair uppercase">Space</h2>
-          <p className="text-[15px] sm:text-[16px] lg:text-[18px] font-barlow break-words font-normal text-skyBlue mx-auto lg:mx-0  sm:max-w-[60%]  lg:max-w-[380px] ">
+          <p className="text-[15px] sm:text-[16px] lg:text-[18px] font-barlow_c break-words font-normal text-skyBlue mx-auto lg:mx-0  sm:max-w-[60%]  lg:max-w-[380px] ">
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this
